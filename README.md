@@ -15,6 +15,6 @@ spa_client.py客户端，发送数据<br>
 ## 使用
 首次使用，请执行encipher 中 generate_rsa_key生成rsa密钥，公钥与spa_client在同一目录下。私钥与spa_server在同一目录下（请注意妥善保管私钥）。<br>
 spa_sever.py 中 packet_callback里面执行捕获到的数据包的处理逻辑与其他操作<br>
-
+spa_client.py中修改对应服务端IP<br>
 服务端执行 python3 spa_sever.py<br>
 客户端执行 python3 spa_client.py  
