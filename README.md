@@ -10,7 +10,7 @@ SPA目前主要应用于[SDP(Software Defined Perimeter )](https://github.com/sm
 encipher.py 加密模块，所有加解密都在此模块中<br>
 spa_sever.py服务端模块，接受数据，解密数据<br>
 spa_client.py客户端，发送数据<br>
-客户端使用AES对数据进行了加密，同时使用RSA加密密钥，使用UDP发送单包。数据包中应包含账户信息，校验信息以及其他必要信息。
+客户端使用AES对数据进行了加密，同时使用RSA加密密钥，使用UDP发送单包。数据包中应包含账户信息、时间戳、校验信息以及其他必要信息。
 
 ## 使用
 首次使用，请执行encipher 中 generate_rsa_key生成rsa密钥，公钥与spa_client在同一目录下。私钥与spa_server在同一目录下（请注意妥善保管私钥）。<br>
