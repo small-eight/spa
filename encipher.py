@@ -129,5 +129,8 @@ def generate_rsa_key():
 if __name__ == '__main__':
     #生成公、私密钥
     #generate_rsa_key()
-    data=encryption(b"hello")
-    decryption(data)
+     if len(sys.argv) < 2:
+        print("Usage: 'python script.py generate'  to creat key")
+        sys.exit(1)
+     elif sys.argv[2]=="generate" :
+        generate_rsa_key()
