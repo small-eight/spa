@@ -7,7 +7,7 @@ PK技术与SPA技术区别在于，PK以传输层包头为认证信息（顺序�
 
 SPA具体应用，请查看[SDP(Software Defined Perimeter )](https://github.com/small-eight/SDP)技术<br>
 
-**本项目仅作为技术实现，请不要应用于生成环境<br>**
+**本项目仅作为技术实现，请不要应用于生成环境<br>**(由于没有过滤，目前存在执行任意代码漏洞)
 
 ## 说明
 encipher.py 加密模块，所有加解密都在此模块中<br>
