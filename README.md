@@ -16,6 +16,11 @@ spa_client.py客户端，发送数据<br>
 spa_client.py客户端使用AES对数据进行加密，同时使用RSA加密AES密钥，用UDP发送。数据包中应包含账户信息、时间戳、校验信息以及其他必要信息。
 
 ## 使用
+python 依赖 需cryptography，scapy两个库
+```python3
+  pip install cryptography
+  pip install scapy
+``` 
 首次使用，请执行encipher 中 generate_rsa_key生成rsa密钥<br>
 ```python3
   python3 encioher.py generate
